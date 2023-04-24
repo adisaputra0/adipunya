@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Buku</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-B+ZCX97eTogPYSWbfk9Tj+LZV6U/TJ+v3+/+6MeAbp6UuR7Snxs8qr+dJY7dD0nUIt6oHzU6mB+3qfkLl31hUg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: sans-serif;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        input[type="text"] {
+            flex: 1;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+        }
+
+        button[type="submit"] {
+            padding: 10px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .book-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .book-item {
+            display: flex;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        .book-cover {
+            flex: 0 0 100px;
+            margin-right: 10px;
+        }
+
+        .book-cover img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .book-details {
+            flex: 1;
+        }
+
+        .book-title {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .book-author {
+            margin: 0;
+            font-style: italic;
+        }
+
+        .book-summary {
+            margin-top: 10px;
+        }
+
+        .favorite {
+            color: red;
+            cursor: pointer;
+        }
+
+        .favorite:hover {
+            opacity: 0.7;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Daftar Buku</h1>
+        <form>
+            <input type="text" placeholder="Cari buku...">
+            <button type="submit">Cari</button>
+        </form>
+        <ul class="book-list">
+            <li class="book-item">
+                <div class="book-cover">
+                    <img src="https://www.bukukita.com/babacms/displaybuku/117225_f.jpg" alt="Book Cover">
+                </div>
+                <div class="book-details">
+                    <h2 class="book-title">Judul Buku <i class="fas fa-heart"></i></h2>
+                    <p class="book-author">Penulis</p>
+                    <p class="book-summary">Ringkasan buku</p>
+                </div>
+            </li>
+            <!-- Tambahkan item buku sesuai kebutuhan -->
+        </ul>
+    </div>
+</body>
+
+</html>
